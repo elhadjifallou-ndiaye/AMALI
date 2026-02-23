@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - AMALI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #C85A34;
+            --color-secondary: #E6A02E;
+            --color-cream: #F5F0E8;
+            --color-dark: #1A1A1A;
+            --color-white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--color-dark);
+            line-height: 1.8;
+            background: var(--color-cream);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: gap 0.3s ease;
+        }
+
+        .back-button:hover {
+            gap: 1rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .last-updated {
+            color: rgba(26, 26, 26, 0.6);
+            font-style: italic;
+        }
+
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        strong {
+            color: var(--color-primary);
+        }
+
+        .important-box {
+            background: linear-gradient(135deg, rgba(200, 90, 52, 0.1), rgba(230, 160, 46, 0.1));
+            border-left: 4px solid var(--color-primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--color-cream);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .footer-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: 15px;
+            color: white;
+        }
+
+        .footer-cta h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .footer-cta a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: var(--color-primary);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-cta a:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .data-table {
+                font-size: 0.9rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Retour à l'accueil</a>
+        
+        <div class="header">
+            <img src="/assets/logoamali.png" alt="AMALI Logo" class="logo">
+            <h1>Politique de confidentialité</h1>
+            <p class="last-updated">Dernière mise à jour : 23 février 2026</p>
+        </div>
+
+        <div class="content">
+            <div class="important-box">
+                <p><strong>Votre vie privée compte pour nous.</strong> Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles sur AMALI.</p>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>AMALI, développée par SEVENTHEC, s'engage à protéger votre vie privée. Cette Politique de confidentialité décrit nos pratiques concernant la collecte, l'utilisation, le stockage et la divulgation de vos informations personnelles lorsque vous utilisez notre application de rencontre.</p>
+            <p>En utilisant AMALI, vous acceptez les pratiques décrites dans cette politique.</p>
+
+            <h2>2. Responsable du traitement</h2>
+            <p><strong>SEVENTHEC</strong><br>
+            Dakar, Sénégal<br>
+            Email : support@amali.app<br>
+            Téléphone : +221 77 782 29 71</p>
+
+            <h2>3. Données que nous collectons</h2>
+
+            <h3>3.1 Informations que vous nous fournissez</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type de données</th>
+                        <th>Exemples</th>
+                        <th>Finalité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Informations de profil</strong></td>
+                        <td>Nom, âge, genre, localisation, photos, bio</td>
+                        <td>Création et affichage de votre profil</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Informations de contact</strong></td>
+                        <td>Adresse email, numéro de téléphone</td>
+                        <td>Authentification, communication</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Préférences</strong></td>
+                        <td>Critères de recherche, filtres, centres d'intérêt</td>
+                        <td>Matching et recommandations</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contenu utilisateur</strong></td>
+                        <td>Messages, photos partagées, interactions</td>
+                        <td>Fonctionnement du service de messagerie</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Informations de paiement</strong></td>
+                        <td>Historique d'abonnement (via stores)</td>
+                        <td>Gestion des abonnements Premium</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 Informations collectées automatiquement</h3>
+            <ul>
+                <li><strong>Données d'utilisation :</strong> Pages visitées, fonctionnalités utilisées, temps passé</li>
+                <li><strong>Données techniques :</strong> Modèle d'appareil, système d'exploitation, version de l'app</li>
+                <li><strong>Géolocalisation :</strong> Localisation approximative (ville) pour le matching</li>
+                <li><strong>Cookies et technologies similaires :</strong> Pour améliorer l'expérience utilisateur</li>
+            </ul>
+
+            <h2>4. Comment nous utilisons vos données</h2>
+
+            <h3>4.1 Finalités principales</h3>
+            <ul>
+                <li><strong>Fournir le service :</strong> Créer votre profil, proposer des matchs, activer la messagerie</li>
+                <li><strong>Améliorer le matching :</strong> Affiner notre algorithme de compatibilité</li>
+                <li><strong>Sécurité :</strong> Vérifier les profils, détecter les fraudes, modérer le contenu</li>
+                <li><strong>Communication :</strong> Vous envoyer des notifications de matchs, messages, mises à jour</li>
+                <li><strong>Support client :</strong> Répondre à vos questions et résoudre les problèmes</li>
+                <li><strong>Conformité légale :</strong> Respecter nos obligations légales</li>
+            </ul>
+
+            <h3>4.2 Marketing (avec votre consentement)</h3>
+            <ul>
+                <li>Vous envoyer des offres spéciales et promotions</li>
+                <li>Vous informer des nouvelles fonctionnalités</li>
+                <li>Personnaliser votre expérience sur l'application</li>
+            </ul>
+            <p>Vous pouvez vous désabonner à tout moment via les paramètres de l'application.</p>
+
+            <h2>5. Partage de vos données</h2>
+
+            <h3>5.1 Visibilité de votre profil</h3>
+            <div class="important-box">
+                <p>Votre profil (photos, bio, informations) est <strong>visible par les autres utilisateurs</strong> de l'application dans le cadre du service de matching.</p>
+            </div>
+
+            <h3>5.2 Prestataires de services</h3>
+            <p>Nous partageons certaines données avec des prestataires de confiance :</p>
+            <ul>
+                <li><strong>Supabase :</strong> Hébergement de la base de données et stockage des photos</li>
+                <li><strong>Google Play / App Store :</strong> Gestion des paiements et abonnements</li>
+                <li><strong>Services de modération :</strong> Vérification du contenu et sécurité</li>
+            </ul>
+            <p>Ces prestataires sont contractuellement tenus de protéger vos données et de les utiliser uniquement pour les finalités convenues.</p>
+
+            <h3>5.3 Autorités légales</h3>
+            <p>Nous pouvons divulguer vos informations si la loi l'exige ou pour :</p>
+            <ul>
+                <li>Répondre à une demande légale valide</li>
+                <li>Protéger nos droits ou notre propriété</li>
+                <li>Prévenir une fraude ou un danger imminent</li>
+            </ul>
+
+            <h3>5.4 Ce que nous ne faisons PAS</h3>
+            <ul>
+                <li>❌ Nous ne vendons JAMAIS vos données à des tiers</li>
+                <li>❌ Nous ne partageons pas vos données à des fins publicitaires tierces</li>
+                <li>❌ Nous ne transférons pas vos messages privés sauf obligation légale</li>
+            </ul>
+
+            <h2>6. Sécurité de vos données</h2>
+            <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données :</p>
+            <ul>
+                <li><strong>Chiffrement :</strong> Connexions HTTPS, chiffrement des données sensibles</li>
+                <li><strong>Authentification :</strong> Système d'authentification sécurisé</li>
+                <li><strong>Accès limité :</strong> Seul le personnel autorisé peut accéder aux données</li>
+                <li><strong>Surveillance :</strong> Détection des activités suspectes et tentatives d'intrusion</li>
+                <li><strong>Mises à jour régulières :</strong> Application des correctifs de sécurité</li>
+            </ul>
+            <p>Cependant, aucun système n'est 100% sécurisé. Nous vous recommandons de :</p>
+            <ul>
+                <li>Utiliser un mot de passe fort et unique</li>
+                <li>Ne jamais partager vos identifiants</li>
+                <li>Signaler toute activité suspecte</li>
+            </ul>
+
+            <h2>7. Conservation des données</h2>
+            <p>Nous conservons vos données tant que votre compte est actif et aussi longtemps que nécessaire pour :</p>
+            <ul>
+                <li>Fournir nos services</li>
+                <li>Respecter nos obligations légales</li>
+                <li>Résoudre les litiges</li>
+                <li>Faire respecter nos accords</li>
+            </ul>
+
+            <h3>Durées de conservation</h3>
+            <ul>
+                <li><strong>Données de profil :</strong> Jusqu'à la suppression de votre compte + 30 jours</li>
+                <li><strong>Messages :</strong> Conservés tant que votre compte est actif</li>
+                <li><strong>Données de paiement :</strong> 5 ans (obligation légale comptable)</li>
+                <li><strong>Logs de sécurité :</strong> 12 mois maximum</li>
+            </ul>
+
+            <h2>8. Vos droits</h2>
+            <p>Conformément à la législation sénégalaise et aux meilleures pratiques internationales, vous disposez des droits suivants :</p>
+
+            <h3>8.1 Droit d'accès</h3>
+            <p>Vous pouvez demander une copie de toutes les données personnelles que nous détenons sur vous.</p>
+
+            <h3>8.2 Droit de rectification</h3>
+            <p>Vous pouvez corriger ou mettre à jour vos informations directement dans l'application ou nous contacter.</p>
+
+            <h3>8.3 Droit à l'effacement</h3>
+            <p>Vous pouvez supprimer votre compte à tout moment via <strong>Paramètres → Supprimer mon compte</strong>. Cette action est irréversible.</p>
+
+            <h3>8.4 Droit d'opposition</h3>
+            <p>Vous pouvez vous opposer au traitement de vos données à des fins de marketing direct.</p>
+
+            <h3>8.5 Droit à la portabilité</h3>
+            <p>Vous pouvez demander à recevoir vos données dans un format structuré et lisible par machine.</p>
+
+            <h3>Comment exercer vos droits</h3>
+            <p>Pour exercer l'un de ces droits, contactez-nous à : <strong>support@amali.app</strong></p>
+            <p>Nous vous répondrons dans un délai de <strong>30 jours</strong>.</p>
+
+            <h2>9. Données sensibles et protection spéciale</h2>
+            
+            <h3>9.1 Photos et contenu visuel</h3>
+            <ul>
+                <li>Toutes les photos sont modérées avant publication</li>
+                <li>Le contenu inapproprié est automatiquement supprimé</li>
+                <li>Vous gardez tous les droits sur vos photos</li>
+            </ul>
+
+            <h3>9.2 Messages privés</h3>
+            <ul>
+                <li>Vos conversations sont privées et chiffrées</li>
+                <li>Nous n'accédons jamais à vos messages sauf signalement d'abus</li>
+                <li>Les messages sont supprimés à la suppression du compte</li>
+            </ul>
+
+            <h3>9.3 Protection des mineurs</h3>
+            <p>AMALI est strictement réservé aux <strong>adultes de 18 ans et plus</strong>. Nous supprimons immédiatement tout compte de mineur détecté. Pour plus d'informations, consultez notre <a href="protection-mineurs.html" style="color: var(--color-primary); font-weight: 600;">page de protection des mineurs</a>.</p>
+
+            <h2>10. Cookies et technologies de suivi</h2>
+            <p>Nous utilisons des cookies et technologies similaires pour :</p>
+            <ul>
+                <li>Maintenir votre session connectée</li>
+                <li>Mémoriser vos préférences</li>
+                <li>Analyser l'utilisation de l'application</li>
+                <li>Améliorer les performances</li>
+            </ul>
+            <p>Vous pouvez gérer vos préférences de cookies dans les paramètres de votre appareil.</p>
+
+            <h2>11. Transferts internationaux</h2>
+            <p>Vos données sont principalement stockées et traitées au <strong>Sénégal</strong> et dans l'Union Européenne (via Supabase).</p>
+            <p>Nous nous assurons que tout transfert de données respecte les normes de protection appropriées.</p>
+
+            <h2>12. Modifications de cette politique</h2>
+            <p>Nous pouvons mettre à jour cette Politique de confidentialité de temps en temps. Les modifications importantes vous seront notifiées via :</p>
+            <ul>
+                <li>Une notification dans l'application</li>
+                <li>Un email à votre adresse enregistrée</li>
+            </ul>
+            <p>La date de "Dernière mise à jour" en haut de cette page indique la version en vigueur.</p>
+
+            <h2>13. Contact et réclamations</h2>
+            
+            <h3>Pour toute question sur cette politique</h3>
+            <p><strong>Email :</strong> support@amali.app<br>
+            <strong>Téléphone :</strong> +221 77 782 29 71<br>
+            <strong>Courrier :</strong> SEVENTHEC, Dakar, Sénégal</p>
+
+            <h3>Autorité de contrôle</h3>
+            <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez déposer une réclamation auprès de la Commission de Protection des Données Personnelles (CDP) du Sénégal.</p>
+
+            <h2>14. Consentement</h2>
+            <p>En utilisant AMALI, vous consentez à la collecte et à l'utilisation de vos informations conformément à cette Politique de confidentialité.</p>
+            <p>Pour certains traitements spécifiques (marketing, géolocalisation précise), nous vous demanderons votre consentement explicite que vous pourrez retirer à tout moment.</p>
+
+            <div class="important-box">
+                <h3 style="margin-top: 0;">📍 Résumé des points clés</h3>
+                <ul style="margin-bottom: 0;">
+                    <li>✅ Nous collectons uniquement les données nécessaires au service</li>
+                    <li>✅ Nous ne vendons JAMAIS vos données</li>
+                    <li>✅ Vous contrôlez vos données et pouvez les supprimer</li>
+                    <li>✅ Vos messages sont privés et sécurisés</li>
+                    <li>✅ Nous respectons les normes de sécurité les plus strictes</li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h3>Des questions sur votre vie privée ?</h3>
+                <p>Notre équipe est là pour vous aider</p>
+                <a href="mailto:support@amali.app">Nous contacter</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
